@@ -23,7 +23,7 @@ func CutVertically(inputImage image.Image, debugEnabled bool) (image.Image) {
 	imageLeft := image.NewRGBA(image.Rect(0, 0, imageWidth, imageHeight/2))
 	imageRight := image.NewRGBA(image.Rect(0, 0, imageWidth, imageHeight/2))
 
-	logrus.Info("PArtias found:", cutterSize)
+	logrus.Info("Vertical cutter size:", cutterSize)
 
 	for i := 0; i < cutterSize; i++ {
 		y0 := factor * i
@@ -58,6 +58,8 @@ func CutHorizontaly(inputImage image.Image, debugEnabled bool) (image.Image) {
 	imageWidth := inputImage.Bounds().Max.X
 
 	cutterSize := findBigestMultiple(imageWidth)
+	logrus.Info("Horitzontal cutter size:", cutterSize)
+
 	outputImage := image.NewRGBA(image.Rect(0, 0, imageWidth, imageHeight))
 
 	imageLeft := image.NewRGBA(image.Rect(0, 0, imageWidth/2, imageHeight))
