@@ -3,7 +3,6 @@ package main
 import (
 	"flag"
 	"fmt"
-
 	"os"
 	"github.com/sirupsen/logrus"
 	"image/jpeg"
@@ -34,7 +33,7 @@ func main() {
 	}
 
 	firstStepImage := cutter.CutHorizontaly(inputImage, *debugImages)
-	lastStepImage := cutter.CutVertically(firstStepImage,*debugImages)
+	lastStepImage := cutter.CutVertically(firstStepImage, *debugImages)
 
 	cutter.SaveImage(lastStepImage, "output_final.png")
 }
