@@ -8,9 +8,16 @@ Idea
 
 
 Given an image, it creates 4 cloned versions made with pieces from the original. 
-Original image: 
-![enter image description here](https://github.com/xfreakart/pasta_cutter/blob/master/gopher.jpg?raw=true)
-we get:
+
+Original image:
+------
+![](https://github.com/xfreakart/pasta_cutter/blob/master/gopher.jpg?raw=true)
+Step 1:
+------
+![enter image description here](https://github.com/xfreakart/pasta_cutter/blob/master/output_images/first_cut.png?raw=true)
+
+Final step:
+------
 ![enter image description here](https://github.com/xfreakart/pasta_cutter/blob/master/output_images/output_final.png?raw=true)
 
 Useful?¿ 
