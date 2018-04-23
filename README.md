@@ -24,7 +24,7 @@ go run main.go -debug -file=gopher.jpg
 ```
 
 ```shell
--debug creates all steps images, nice for debugging.
+-debug creates all steps images, nice for debugging, don't add the flag for disable debugging images.
 -file=FILENAME   route of image (JPG) to be processed.
 ```
 
